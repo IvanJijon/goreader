@@ -9,6 +9,11 @@ type MockPageNavigator struct {
 	mock.Mock
 }
 
+// NewMockPageNavigator creates a MockPageNavigator
+func NewMockPageNavigator() *MockPageNavigator {
+	return &MockPageNavigator{}
+}
+
 func (p *MockPageNavigator) Draw() error {
 	panic("not implemented") // TODO: Implement
 }
