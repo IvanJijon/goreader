@@ -9,7 +9,7 @@ import (
 )
 
 func TestInitNavigationKeys(t *testing.T) {
-	p := &localMock.MockPageNavigator{}
+	p := localMock.NewMockPageNavigator()
 	a := localMock.NewMockApplication(p)
 
 	a.On("PageNavigator").Return(p)
